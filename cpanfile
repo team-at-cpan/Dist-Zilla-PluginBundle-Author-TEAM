@@ -61,4 +61,5 @@ requires 'Dist::Zilla::Plugin::Git::CommitBuild', 0;
 requires 'Dist::Zilla::Plugin::Git::Tag', 0;
 requires 'Dist::Zilla::Plugin::ArchiveRelease', 0;
 requires 'Dist::Zilla::Plugin::Git::Push', 0;
+requires 'Test::CPAN::Meta', 0;
 requires 'Perl::Version', 0;

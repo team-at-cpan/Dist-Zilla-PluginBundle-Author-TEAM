@@ -1,10 +1,21 @@
 package Dist::Zilla::PluginBundle::Author::TEAM;
+# ABSTRACT: Defines common dist.ini config for distributions by TEAM
 
 use strict;
 use warnings;
 
 our $VERSION = '0.001';
  
+=head1 NAME
+
+Dist::Zilla::PluginBundle::Author::TEAM - yet another plugin bundle for Dist::Zilla
+
+=head1 DESCRIPTION
+
+See L<https://metacpan.org/author/TEAM> for modules which may possibly use this.
+
+=cut
+
 use Dist::Zilla::Util;
 use Moose;
 use Perl::Version;
@@ -70,20 +81,13 @@ sub configure {
         ['Test::Compile'],
         ['Test::Version'],
         ['SpellingCommonMistakesTests'],
-        ['Test::ReportPrereqs'],
-        ['ManifestSkip'],
         ['MetaTests'],
         ['Test::CPAN::Changes'],
-        ['PodCoverageTests'],
-        ['PodSyntaxTests'],
         ['Test::Pod::No404s'],
-        ['Test::Compile'],
         ['Test::MinimumVersion' => {max_target_perl => $perl_version_target}],
         ['Test::EOL' => {finder => [@check_files]}],
         ['Test::NoTabs' => {finder => [@check_files]}],
-        ['Test::Perl::Critic'],
         ['Test::Portability'],
-        ['Test::CleanNamespaces'],
         ['Test::ReportPrereqs'],
         ['Authority' => {authority => $self->authority, do_munging => 0}],
         ['MetaJSON'],
@@ -128,3 +132,20 @@ with 'Dist::Zilla::Role::PluginBundle::Config::Slicer';
 __PACKAGE__->meta->make_immutable;
 
 1;
+
+=head1 AUTHOR
+
+Tom Molesworth C<< <TEAM@cpan.org> >>, but structure mostly taken from other plugin bundles such as:
+
+=over 4
+
+=item * L<Dist::Zilla::PluginBundle::Author::ETHER>
+
+=item * L<Dist::Zilla::Plugin::Author::Plicease>
+
+=back
+
+=head1 LICENSE
+
+Copyright Tom Molesworth 2019. Licensed under the same terms as Perl itself.
+
