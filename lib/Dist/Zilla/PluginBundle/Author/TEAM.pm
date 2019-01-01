@@ -4,7 +4,7 @@ package Dist::Zilla::PluginBundle::Author::TEAM;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
  
 =head1 NAME
 
@@ -52,7 +52,6 @@ sub configure {
  
     my @copy_from_build     = qw(LICENSE Makefile.PL);
     my @gather_exclude      = (@copy_from_build, qw(README.md));
-    my @gather_prune        = qw(dist.ini);
     my @no_index            = qw(eg share shares t xt);
     my @allow_dirty         = (@copy_from_build, qw(Changes LICENSE README.md));
     my @git_remotes         = qw(github origin);
@@ -64,7 +63,6 @@ sub configure {
             exclude_filename => [ @gather_exclude ]
         } ],
         ['PruneCruft'],
-        ['PruneFiles' => {filename => [@gather_prune]}],
         ['CopyFilesFromBuild' => {copy => [@copy_from_build]}],
         ['ExecDir'],
         ['ShareDir'],
