@@ -4,7 +4,8 @@ package Dist::Zilla::PluginBundle::Author::TEAM;
 use strict;
 use warnings;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
+# AUTHORITY
  
 =head1 NAME
 
@@ -81,13 +82,12 @@ sub configure {
         ['SpellingCommonMistakesTests'],
         ['MetaTests'],
         ['Test::CPAN::Changes'],
-        ['Test::Pod::No404s'],
         ['Test::MinimumVersion' => {max_target_perl => $perl_version_target}],
         ['Test::EOL' => {finder => [@check_files]}],
         ['Test::NoTabs' => {finder => [@check_files]}],
         ['Test::Portability'],
         ['Test::ReportPrereqs'],
-        ['Authority' => {authority => $self->authority, do_munging => 0}],
+        ['Authority' => {authority => $self->authority, do_munging => 1, locate_comment => 1}],
         ['MetaJSON'],
         ['MetaYAML'],
         ['MetaNoIndex' => {directory => [@no_index]}],
