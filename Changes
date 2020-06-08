@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    Avoid running xt/ tests twice
 
 0.003     2020-06-08 14:02:42+08:00 Asia/Kuala_Lumpur
     Disables the No404s test, since some distributions can have

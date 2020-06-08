@@ -4,7 +4,7 @@ package Dist::Zilla::PluginBundle::Author::TEAM;
 use strict;
 use warnings;
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 # AUTHORITY
 
 =head1 NAME
@@ -109,7 +109,6 @@ sub configure {
         ['NextRelease'],
         ['CheckChangesHasContent'],
         ['Git::Check' => {allow_dirty => [@allow_dirty], untracked_files => 'ignore'}],
-        ['RunExtraTests'],
         ['TestRelease'],
         ['UploadToCPAN'],
         ['ConfirmRelease'],
