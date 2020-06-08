@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.004     2020-06-08 14:39:00+08:00 Asia/Kuala_Lumpur
     Avoid running xt/ tests twice
 
 0.003     2020-06-08 14:02:42+08:00 Asia/Kuala_Lumpur
