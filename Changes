@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.003     2020-06-08 14:02:42+08:00 Asia/Kuala_Lumpur
     Disables the No404s test, since some distributions can have
     thousands of links and the test is rarely useful.
 
