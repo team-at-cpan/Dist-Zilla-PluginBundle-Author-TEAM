@@ -3,6 +3,11 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
     No new features.
 
+    Functional changes:
+
+    - AutoPrereqs removed, since it was causing more trouble that it's worth
+    (picks up "require" and other lines and can lead to dependency cycles)
+
     Bugs fixed:
 
     - pull in PodInherit 0.008 so that builds work without a
