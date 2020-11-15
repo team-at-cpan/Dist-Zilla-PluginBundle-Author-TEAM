@@ -80,6 +80,7 @@ my %WriteMakefileArgs = (
     "Moose" => 0,
     "Perl::Version" => 0,
     "Test::CPAN::Meta" => 0,
+    "Test::CPANfile" => 0,
     "strict" => 0,
     "warnings" => 0
   },
@@ -88,6 +89,7 @@ my %WriteMakefileArgs = (
     "File::Spec" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
+    "Test::CPANfile" => 0,
     "Test::CheckDeps" => "0.010",
     "Test::More" => "0.94"
   },
@@ -166,6 +168,7 @@ my %FallbackPrereqs = (
   "Moose" => 0,
   "Perl::Version" => 0,
   "Test::CPAN::Meta" => 0,
+  "Test::CPANfile" => 0,
   "Test::CheckDeps" => "0.010",
   "Test::More" => "0.94",
   "strict" => 0,

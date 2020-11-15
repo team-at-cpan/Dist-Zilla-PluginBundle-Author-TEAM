@@ -1,3 +1,4 @@
+requires 'Dist::Zilla::Util', 0;
 requires 'Dist::Zilla::Role::PluginBundle::Easy', 0;
 requires 'Dist::Zilla::Role::PluginBundle::PluginRemover', 0;
 requires 'Dist::Zilla::Role::PluginBundle::Config::Slicer', 0;
@@ -63,3 +64,10 @@ requires 'Dist::Zilla::Plugin::ArchiveRelease', 0;
 requires 'Dist::Zilla::Plugin::Git::Push', 0;
 requires 'Test::CPAN::Meta', 0;
 requires 'Perl::Version', 0;
+requires 'Test::CPANfile', 0;
+requires 'Moose', 0;
+
+on 'configure' => sub {
+    requires 'perl', '>= 5.014';
+};
+

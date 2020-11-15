@@ -67,7 +67,6 @@ sub configure {
         ['CopyFilesFromBuild' => {copy => [@copy_from_build]}],
         ['ExecDir'],
         ['ShareDir'],
-        ['AutoPrereqs'],
         -f 'cpanfile' ? ['Prereqs::FromCPANfile'] : (),
         ['Prereqs::AuthorDeps'],
         ['CheckPrereqsIndexed'],
