@@ -1,0 +1,24 @@
+NAME
+
+    Dist::Zilla::PluginBundle::Author::TEAM - yet another plugin bundle for
+    Dist::Zilla
+
+DESCRIPTION
+
+    See https://metacpan.org/author/TEAM for modules which may possibly use
+    this.
+
+AUTHOR
+
+    Tom Molesworth <TEAM@cpan.org>, but structure mostly taken from other
+    plugin bundles such as:
+
+      * Dist::Zilla::PluginBundle::Author::ETHER
+
+      * Dist::Zilla::Plugin::Author::Plicease
+
+LICENSE
+
+    Copyright Tom Molesworth 2019. Licensed under the same terms as Perl
+    itself.
+
