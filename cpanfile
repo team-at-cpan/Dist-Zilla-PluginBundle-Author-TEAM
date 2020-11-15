@@ -65,8 +65,10 @@ requires 'Dist::Zilla::Plugin::Git::Push', 0;
 requires 'Test::CPAN::Meta', 0;
 requires 'Perl::Version', 0;
 requires 'Test::CPANfile', 0;
+requires 'Test::CheckDeps', 0;
 requires 'Moose', 0;
 
+requires 'perl', '>= 5.014';
 on 'configure' => sub {
     requires 'perl', '>= 5.014';
 };
