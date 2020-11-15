@@ -14,7 +14,7 @@ requires 'Dist::Zilla::Plugin::Prereqs::AuthorDeps', 0;
 requires 'Dist::Zilla::Plugin::CheckPrereqsIndexed', 0;
 requires 'Dist::Zilla::Plugin::CheckExtraTests', 0;
 requires 'Dist::Zilla::Plugin::InsertExample', 0;
-requires 'Dist::Zilla::Plugin::PodInherit', 0;
+requires 'Dist::Zilla::Plugin::PodInherit', '>= 0.008';
 requires 'Dist::Zilla::Plugin::PodSyntaxTests', 0;
 requires 'Dist::Zilla::Plugin::MojibakeTests', 0;
 requires 'Dist::Zilla::Plugin::Test::CheckDeps', 0;

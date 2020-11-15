@@ -1,6 +1,12 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    No new features.
+
+    Bugs fixed:
+
+    - pull in PodInherit 0.008 so that builds work without a
+    patched Pod::Inherit.
 
 0.004     2020-06-08 14:39:00+08:00 Asia/Kuala_Lumpur
     Avoid running xt/ tests twice
